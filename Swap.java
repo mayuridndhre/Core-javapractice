@@ -1,20 +1,31 @@
-//WAP to swap the two number
-
 class Swap
 {
+int a,b,temp;
+
+void getdata(int x,int y)
+{
+a=x;
+b=y;
+calc();
+}
+
+void calc()
+{
+System.out.println("before swapping value of a is :"+a+ "and the value of b is :"+b);
+temp=a;
+a=b;
+b=temp;
+}
+
+void display()
+{
+System.out.println("after swapping value of a is :"+a+ "and the value of b is :"+b);
+}
+
 public static void main(String args[])
 {
-int var_1=50;
-int var_2=100;
-int temp_var;
-System.out.println("Before swapping the value of var1 is :"+var_1 +" and var2 is :"+var_2);
-
-temp_var=var_1;
-System.out.println(var_1);
-var_1=var_2;
-var_2=temp_var;
-
-System.out.println("After swapping the value of var1 is :"+var_1 +" and var2 is :" +var_2);
-
+Swap s=new Swap();
+s.getdata(10,20);
+s.display();
 }
 }
