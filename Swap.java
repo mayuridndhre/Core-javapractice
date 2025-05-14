@@ -2,11 +2,10 @@ class Swap
 {
 int a,b,temp;
 
-void getdata(int x,int y)
+void getdata()
 {
-a=x;
-b=y;
-calc();
+a=10;
+b=20;
 }
 
 void calc()
@@ -25,7 +24,8 @@ System.out.println("after swapping value of a is :"+a+ "and the value of b is :"
 public static void main(String args[])
 {
 Swap s=new Swap();
-s.getdata(10,20);
+s.getdata();
+s.calc();
 s.display();
 }
 }

@@ -5,12 +5,11 @@ int Rate;
 int Time;
 int SI;
 
-void getdata(int x,int y,int z)
+void getdata()
 {
-Principal=x;
-Rate=y;
-Time=z;
-calc();
+Principal=20000;
+Rate=10;
+Time=2;
 }
 void calc()
 {
@@ -24,7 +23,8 @@ System.out.println("SimpleInterest is :"+SI);
 public static void main(String args[])
 {
 SimpleInterest s=new SimpleInterest();
-s.getdata(20000,20,2);
+s.getdata();
+s.calc();
 s.show();
 }
 }

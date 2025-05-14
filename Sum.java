@@ -1,14 +1,13 @@
 class Sum
 {
 int a,b,c,add;
-void getdata(int x,int y,int z)
+void getdata()
 {
-a=x;
-b=y;
-c=z;
-calc(a,b,c);
+a=10;
+b=20;
+c=30;
 }
-void calc(int a,int b,int c)
+void sum()
 {
 add=a+b+c;
 }
@@ -20,7 +19,9 @@ System.out.println("Sum of three nos is : "+add);
 public static void main(String args[])
 {
 Sum s = new Sum();
-s.getdata(10,20,10);
+s.getdata();
+s.sum();
 s.display();
 }
+
 }

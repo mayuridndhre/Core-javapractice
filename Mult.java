@@ -1,6 +1,6 @@
-class Div
+class Mul
 {
-int a,b,Div;
+int a,b,Multi;
 void getdata()
 {
 a=5;
@@ -8,8 +8,9 @@ b=10;
 }
 int cal()
 {
-Div=a/b;
-System.out.println("Div of two nos is :"+Div);
+Multi=a*b;
+return Multi;
+//System.out.println("Multiplication of two nos is :"+Multi);
 }
 
 public static void main(String args[])

@@ -6,12 +6,11 @@ int Time;
 double Amount;
 double CI;
 
-void getdata(int x,int y,int z)
+void getdata()
 {
-principal=x;
-Rate=y;
-Time=z;
-calc();
+principal=40000;
+Rate=10;
+Time=2;
 }
 
 void calc()
@@ -28,7 +27,8 @@ System.out.println("Compound Interest is : "+CI);
 public static void main(String args[])
 {
 CompoundInterest c=new CompoundInterest();
-c.getdata(20000,20,2);
+c.getdata();
+c.calc();
 c.display();
 }
 }

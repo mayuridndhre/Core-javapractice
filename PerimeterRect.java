@@ -2,11 +2,10 @@ class PerimeterRect
 {
 int length,width,PeriRect;
 
-void getdata(int x,int y)
+void getdata()
 {
-length=x;
-width=y;
-calc();
+length=10;
+width=20;
 }
 
 void calc()
@@ -22,7 +21,8 @@ System.out.println("Perimeter of Rectangle is : "+PeriRect);
 public static void main(String args[])
 {
 PerimeterRect p=new PerimeterRect();
-p.getdata(10,20);
+p.getdata();
+p.calc();
 p.display();
 }
 
